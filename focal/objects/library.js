@@ -22,40 +22,57 @@ const library = {
                     }
              }
 };
-
-// printPlaylists
+//----------------------------------------------------------
 // print all avalible playlist (p01/p02) (library.playlists)
-const printAllPlaylist = () => {
-       console.log(library.playlists)
-}
+// const printAllPlaylist = () => {
+//        console.log(library.playlists)
+// }
 
 // printAllPlaylist();
 
 //----------------------------------------------------------
-// printTracks
 // print all avalible tracks (t01/t02/t03) (library.tracks)
-const printAllTracks = () => {
-       console.log(library.tracks);
-}
+// const printAllTracks = () => {
+//        console.log(library.tracks);
+// }
 
 // printAllTracks();
 
 //----------------------------------------------------------
-// printPlaylist
 // Print the tracks on one playlist (t01/t02) (library.playlists.p01/p02)
 // function would loop through p01 and p02. if match, console log. If no matches, return error message. 
+// const showTracksinPL = (playListNum, playlist,plNum ) => { 
+//       console.log(playListNum,playlist,plNum );
+// }
+// showTracksinPL(library.playlists.p02);
 
-console.log(library.playlists.p01)
-
-// addTrackToPlaylist
+//----------------------------------------------------------
 // add a existing track to an existing playlist (t03) (library.playlist.p01)
+// const addTrackToPL = (addedTracks) => {
+//        let playList = library.playlists.p01.tracks;
+//        playList.push(addedTracks);
+//        console.log(playList)
+// }
 
-// addTrack
+// addTrackToPL(`t03`);
+
+//----------------------------------------------------------
 // add a new track
+const addNewTrack = (id, name, artist, album) => {
+       const t04 = {
+              id: id,
+              name: name,
+              artist: artist,
+              album: album
+       }
+       return t04
+}
 
-// addPlaylist
+const t04 = (addNewTrack(`t04`, `Beat It`, `Michael Jackson`,`Thriller`));
+console.log(t04)
+//----------------------------------------------------------
 // add a new playlist
-
+//----------------------------------------------------------
 // printSearchResults (stretch)
 // create a search function. 
 // searching for just the tracks?
